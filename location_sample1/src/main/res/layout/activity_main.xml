@@ -10,8 +10,54 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="tw.com.thinkpower.googleplayservicesample.MainActivity">
 
-    <TextView
+    <TextView android:id="@+id/label_longitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/longitude"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="start|center_vertical"/>
+    <TextView
+        android:id="@+id/label_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_longitude"
+        android:layout_alignEnd="@+id/label_longitude"
+        android:layout_alignRight="@+id/label_longitude"
+        android:layout_alignStart="@+id/label_longitude"
+        android:layout_alignLeft="@+id/label_longitude"
+        android:gravity="start|center_vertical"
+        android:text="@string/latitude"/>
+    <TextView
+        android:id="@+id/value_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/label_longitude"
+        android:layout_toEndOf="@+id/label_latitude"
+        android:layout_toRightOf="@id/label_latitude"
+        android:text="@string/dot"/>
+    <TextView
+        android:id="@+id/value_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/label_latitude"
+        android:layout_toEndOf="@+id/label_latitude"
+        android:layout_toRightOf="@+id/label_latitude"
+        android:text="@string/dot"/>
+    <TextView android:id="@+id/label_possible_address"
+        android:layout_below="@+id/label_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/label_longitude"
+        android:layout_alignLeft="@+id/label_longitude"
+        android:text="@string/possible_address"/>
+    <TextView
+        android:id="@+id/value_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/label_possible_address"
+        android:layout_toEndOf="@+id/label_possible_address"
+        android:layout_toRightOf="@+id/label_possible_address"
+        android:text="@string/dot"/>
 </RelativeLayout>

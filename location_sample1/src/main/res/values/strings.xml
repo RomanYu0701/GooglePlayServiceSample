@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">GooglePlayServiceSample</string>
+    <string name="app_name">LocationSample</string>
+    <string name="longitude">longitude</string>
+    <string name="latitude">latitude</string>
+    <string name="dot">…</string>
+    <string name="possible_address">possible address</string>
 </resources>
